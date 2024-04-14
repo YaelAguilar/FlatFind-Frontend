@@ -3,8 +3,8 @@ import { Navigate } from 'react-router-dom';
 import { differenceInDays } from 'date-fns';
 import { toast } from 'react-toastify';
 
-import { useAuth } from '../../../hooks';
-import axiosInstance from '../../utils/utils';
+import { useAuth } from '../../hooks';
+import axiosInstance from '../../utils/axios';
 import DatePickerWithRange from './DatePickerWithRange';
 
 const BookingWidget = ({ place }) => {

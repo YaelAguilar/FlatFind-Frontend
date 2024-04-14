@@ -1,8 +1,8 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { DayPicker } from 'react-day-picker';
 
-import { cn } from '@/lib/utils';
-import { buttonVariants } from '@/components/ui/button';
+import { cn } from '../../lib/utils';
+import { buttonVariants } from '../atoms/button';
 
 function Calendar({ className, classNames, ...props }) {
   return (

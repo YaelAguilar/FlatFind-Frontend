@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Image from './Image';
+import Image from '../atoms/Image';
 import axiosInstance from '../../utils/axios';
 
 const PhotosUploader = ({ addedPhotos, setAddedPhotos }) => {

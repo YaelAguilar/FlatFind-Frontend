@@ -6,14 +6,14 @@ import {
   DialogContent,
   DialogFooter,
   DialogTrigger,
-} from '@/components/ui/dialog';
+} from '../organisms/dialog';
 
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Button } from '@/components/ui/button';
-import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Input } from '../atoms/input';
+import { Label } from '../atoms/label';
+import { Button } from '../atoms/button';
+import { Avatar, AvatarImage } from './avatar';
 import { Loader2, PenSquare, Upload } from 'lucide-react';
-import { useAuth } from '../../../hooks';
+import { useAuth } from '../../hooks';
 
 const EditProfileDialog = () => {
   const { user, setUser, uploadPicture, updateUser } = useAuth();

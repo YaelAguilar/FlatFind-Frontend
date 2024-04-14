@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import axiosInstance from '@/utils/axios';
-import { usePlaces } from '../../../hooks';
+import axiosInstance from '../../utils/axios';
+import { usePlaces } from '../../hooks';
 
 const SearchBar = () => {
   const Places = usePlaces();

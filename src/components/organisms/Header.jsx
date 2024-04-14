@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import { useAuth } from '../../../hooks';
+import { useAuth } from '../../hooks';
 import SearchBar from './SearchBar';
 import { Avatar, AvatarImage, AvatarFallback } from '@radix-ui/react-avatar';
 
