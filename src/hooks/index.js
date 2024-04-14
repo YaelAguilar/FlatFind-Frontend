@@ -1,8 +1,8 @@
 import { useState, useEffect, useContext } from 'react';
 import jwt_decode from 'jwt-decode';
 
-import { UserContext } from '@/providers/UserProvider';
-import { PlaceContext } from '@/providers/PlaceProvider';
+import { UserContext } from '../providers/UserProvider';
+import { PlaceContext } from '../providers/PlaceProvider';
 
 import { getItemFromLocalStorage, setItemsInLocalStorage, removeItemFromLocalStorage } from '../lib/utils';
 import axiosInstance from '../utils/axios';
