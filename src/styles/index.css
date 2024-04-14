@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f7f7f7;
+    --foreground: #333;
+
+    --card: #fff;
+    --card-foreground: #333;
+
+    --popover: #fff;
+    --popover-foreground: #333;
+
+    --primary: #ff5a5f; /* Rojo */
+    --primary-foreground: #fff; /* Blanco */
+
+    --secondary: #00a699; /* Verde azulado */
+    --secondary-foreground: #fff;
+
+    --muted: #ebebeb; /* Gris claro */
+    --muted-foreground: #666; /* Gris oscuro */
+
+    --accent: #007b80; /* Azul verdoso */
+    --accent-foreground: #fff;
+
+    --destructive: #ff383f; /* Rojo claro */
+    --destructive-foreground: #fff;
+
+    --border: #ccc;
+    --input: #ccc;
+    --ring: #333;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+input[type='tel'],
+textarea {
+  @apply my-2 w-full rounded-[10px] border py-2 px-3;
+}
+
+textarea {
+  height: 140px;
+}
+
+button {
+  @apply bg-primary; /* Cambio de color de fondo */
+}
+
+button.primary {
+  @apply w-full rounded-[10px] bg-primary p-2 text-primary-foreground; /* Cambio de color de fondo y texto */
+}
+
+button.social {
+  @apply w-full rounded-[10px] border-[1px] border-black bg-white p-2 font-semibold text-black hover:bg-muted; /* Cambio de color de fondo al hacer hover */
+}
+
+.card {
+  @apply h-[410px] w-[327px] sm:h-[500px] sm:w-[435px] md:h-[400px] md:w-[350px] lg:h-[400px] lg:w-[330px] xl:h-[350px] xl:w-[300px];
+}

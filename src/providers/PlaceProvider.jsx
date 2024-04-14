@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-import { useProvidePlaces } from '../hooks';
+import { useProvidePlaces } from '../../hooks';
 
 const initialState = {
   places: [],
